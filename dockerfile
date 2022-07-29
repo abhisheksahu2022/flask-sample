@@ -8,4 +8,5 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 copy hello.py .
 RUN pip3 install flask
-CMD [ "python", "./hello.py"]
+CMD ["/hello.py"]
+ENTRYPOINT ["python"]
