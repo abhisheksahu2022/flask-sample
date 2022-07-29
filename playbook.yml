@@ -1,0 +1,8 @@
+---
+- hosts: mygroup
+  become: True
+  become_user: root  
+  name: Play1
+  tasks:
+    - name: Install Java using Ansible
+      apt: name=openjdk-8-jdk state=present
