@@ -1,0 +1,7 @@
+[mygroup]
+172.31.10.213
+172.31.12.225
+
+[mygroup:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/.ssh/id_rsa
